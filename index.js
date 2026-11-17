@@ -69,7 +69,9 @@ app.get('/lpt/plug5', (req, res) => {
     res.json(plug5);
 });
 app.get('/lpt/sensor', (req, res) => {
-    res.json(sensor);
+    //res.json(sensor);
+    console.log(sensor);
+    res.json({"test":plug5});
 });
 app.listen(3000, () => {
   console.log(`Server is running on port 3000`);
